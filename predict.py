@@ -9,8 +9,8 @@ try:
         for row in reader:
             theta0 = float(row['theta0'])
             theta1 = float(row['theta1'])
-except:
-    print("invalid parameters for theta")
+except Exception as e:
+    print(e)
     exit(1)
 
 try:
